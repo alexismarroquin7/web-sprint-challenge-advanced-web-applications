@@ -6,8 +6,8 @@ const Login = (props) => {
   // when you have handled the token, navigate to the BubblePage route
 
   const [credentials, setCredentails] = useState({
-    username: "Lambda School",
-    password: "i<3Lambd4"
+    username: "",
+    password: ""
   });
 
   useEffect(()=>{
