@@ -4,10 +4,17 @@ import BubblePage from "./BubblePage";
 
 test("Renders BubblePage without errors", () => {
   // Finish this test
+  render(<BubblePage />);
 });
 
-test("Fetches data and renders the bubbles on mounting", () => {
+test("Fetches data and renders the bubbles on mounting", async () => {
   // Finish this test
+  render(<BubblePage />);
+
+  const colors = await screen.findByText("colors");
+
+  expect(colors).toBeInTheDocument();
+
 });
 
 //Task List
